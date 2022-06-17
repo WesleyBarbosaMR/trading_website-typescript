@@ -1,27 +1,27 @@
 export class Trade {
-    private _dateTransaction;
-    private _amount;
-    private _cost;
+    private _dateTransaction: Date;
+    private _amount: number;
+    private _cost: number;
 
-    constructor(dateTransaction, amount, cost) {
+    constructor(dateTransaction: Date, amount: number, cost: number) {
         this._dateTransaction = dateTransaction;
         this._amount = amount;
         this._cost = cost;
     }
 
-    get data() {
+    get data(): Date {
         return this._dateTransaction;
     }
 
-    get amount() {
+    get amount(): number {
         return this._amount;
     }
 
-    get cost() {
+    get cost(): number {
         return this._cost;
     }
 
-    get volume() {
+    get volume(): number {
         return this._amount * this._cost;
     }
     

@@ -6,7 +6,7 @@ export class TradesList {
         this.trades.push(trade);
     }
     listTrades() {
-        return this.trades;
+        return [...this.trades]; // [...<elements>](spread) add each element of the list in a array to prevent undue changes to data.
     }
 }
 /*const trades = new TradesList();

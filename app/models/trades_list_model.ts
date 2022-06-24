@@ -8,7 +8,7 @@ export class TradesList {
     }
 
     listTrades(): Array<Trade> {
-        return this.trades;
+        return [...this.trades];// [...<elements>](spread) add each element of the list in a array to prevent undue changes to data.
     }
 }
 

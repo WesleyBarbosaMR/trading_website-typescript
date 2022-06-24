@@ -1,5 +1,5 @@
 export class Trade {
-    private _dateTransaction: Date;
+    /*private _dateTransaction: Date;
     private _amount: number;
     private _cost: number;
 
@@ -7,7 +7,8 @@ export class Trade {
         this._dateTransaction = dateTransaction;
         this._amount = amount;
         this._cost = cost;
-    }
+    }*/
+    constructor(private _dateTransaction: Date, private _amount: number, private _cost: number) {}//Simplifying the creation of class properties using TypeScript features.
 
     get data(): Date {
         return this._dateTransaction;
